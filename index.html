@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Now Amazing Webpage</title>
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/custom.css">
+  </head>
+  <body style="background-color: gray;">
+
+  <div class="your-class" style="width: 1200px;margin-left:200px">
+    <img src="https://via.placeholder.com/400x200.png?text=Slide+1" alt="">
+    <img src="https://via.placeholder.com/400x200.png?text=Slide+2" alt="">
+    <img src="https://via.placeholder.com/400x200.png?text=Slide+3" alt="">
+    <img src="https://via.placeholder.com/400x200.png?text=Slide+4" alt="">
+    <img src="https://via.placeholder.com/400x200.png?text=Slide+5" alt="">
+  </div>
+  
+  <button id="prevBtn">&lt; Prev</button>
+  <button id="nextBtn">Next &gt;</button>
+
+  <script type="text/javascript" src="./js/jquery-3.5.1.min.js"></script>
+  <!--script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script-->
+  <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: "#prevBtn",
+        nextArrow: "#nextBtn",
+        dotsClass: "custom-dots",
+        draggable: true,
+        initialSlide: 4,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
+  </script>
+
+  </body>
+</html>
